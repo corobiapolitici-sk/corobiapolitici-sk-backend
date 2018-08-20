@@ -1,0 +1,15 @@
+{
+	"version": "0.2.0",
+	"configurations": [{
+		"name": "[Node] Current file",
+		"type": "node",
+		"request": "launch",
+		"args": ["${relativeFile}"],
+		"runtimeArgs": ["--nolazy"],
+		"cwd": "${workspaceRoot}",
+		"protocol": "inspector",
+		"windows": {
+			"runtimeExecutable": "C:\\Programs\\nodejs\\node"
+		}
+	}]
+}

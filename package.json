@@ -1,27 +1,31 @@
 {
-  "name": "@player1os/js-node-script",
-  "version": "0.0.0",
-  "description": "A base project from which simple scripts written in javascript for node can be derived",
+  "name": "@player1os/js-node-script-template",
+  "description": "A template project from which simple scripts written in Javascript for NodeJS can be derived",
+  "scripts": {
+    "update-base-create": "support-require @player1os/javascript-support/lib/task/update_base/create",
+    "update-base-load": "support-require @player1os/javascript-support/lib/task/update_base/load"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Player1os/js-node-script.git"
+    "url": "git+https://github.com/Player1os/js-node-script-template.git"
   },
   "keywords": [
     "javascript",
     "node",
-    "script"
+    "script",
+    "template"
   ],
   "author": "Osama Hassanein <player1os@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Player1os/js-node-script/issues"
+    "url": "https://github.com/Player1os/js-node-script-template/issues"
   },
-  "homepage": "https://github.com/Player1os/js-node-script/#readme",
+  "homepage": "https://github.com/Player1os/js-node-script-template/#readme",
   "engines": {
     "node": "^10.6.0",
     "npm": "^6.1.0"
   },
-  "devDependencies": {
-    "@player1os/javascript-support": "^1.0.0"
+  "dependencies": {
+    "@player1os/javascript-support": "^1.3.10"
   }
 }
