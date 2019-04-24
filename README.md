@@ -1,7 +1,7 @@
 # JS Node Script Template
 
 [![License](https://img.shields.io/github/license/Player1os/js-node-script-template.svg)](https://github.com/Player1os/js-node-script-template/blob/master/LICENSE)
-[![NodeJS version](https://img.shields.io/badge/node%20version-v10.6.0-brightgreen.svg)](https://nodejs.org/dist/v10.6.0/)
+[![NodeJS version](https://img.shields.io/badge/node%20version-v10.15.3-brightgreen.svg)](https://nodejs.org/dist/v10.15.3/)
 
 A template project from which simple scripts written in Javascript for NodeJS can be derived.
 
@@ -225,8 +225,10 @@ ensures any newly introduced dependencies are installed.
 
 The following **VSCode** debugger configurations can be used in derived projects:
 
-- **[Node] Current file** to debug the currently open Javascript file
+- **[Node] Current file** to debug the currently open Javascript file.
 
-The configurations' definitions can be found
-[here](https://github.com/Player1os/system-configuration/blob/master/script/vscode/debugger_configurations.json.mustache),
-for more information visit the [system-configuration](https://github.com/Player1os/system-configuration) project's page.
+## Inherited development assets
+
+This project inherits development assets from the following projects:
+
+- [@player1os/javascript-support](https://github.com/Player1os/javascript-support)
