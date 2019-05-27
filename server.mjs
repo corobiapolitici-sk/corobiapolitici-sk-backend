@@ -1,6 +1,6 @@
 // Load npm modules.
 const { ApolloServer } = require('apollo-server')
-const { v1 : neo4j } = require('neo4j-driver')
+const { v1: neo4j } = require('neo4j-driver')
 const { makeAugmentedSchema } = require('neo4j-graphql-js')
 
 const typeDefs = `
@@ -120,8 +120,8 @@ type Delegacia {
 `
 
 const driver = neo4j.driver(
-  'bolt://localhost:11001', // TODO SETUP: 'bolt://localhost:7687',
-  neo4j.auth.basic('neo4j', 'skuska'), // TODO SETUP: neo4j.auth.basic('neo4j', 'h6u4%kr')
+	'bolt://localhost:11001', // TODO SETUP: 'bolt://localhost:7687',
+	neo4j.auth.basic('neo4j', 'skuska'), // TODO SETUP: neo4j.auth.basic('neo4j', 'h6u4%kr')
 )
 
 const server = new ApolloServer({
