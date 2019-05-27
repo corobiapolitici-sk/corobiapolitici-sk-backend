@@ -22,8 +22,9 @@ module.exports = async (db) => {
 	for (const node of nodes) {
 		node._id = node._id.toString()
 		node.name = node.id
-		node.tag = ''
 		node.imageUrl = '/preprocessed/image/vybor/default.png'
+		delete node.insertTime
+		node.tag = ''
 
 		if (dataMap.has(node.id)) {
 			const {
