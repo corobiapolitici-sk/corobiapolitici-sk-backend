@@ -1,0 +1,78 @@
+{
+	"Výbor NR SR pre pôdohospodárstvo a životné prostredie": {
+		"name": "Pôdohospodárstvo a životné prostredie",
+		"tag": "podohospodarstvo_a_zivotne_prostredie"
+	},
+	"Výbor NR SR pre vzdelávanie, vedu, mládež a šport": {
+		"name": "Vzdelávanie, veda, mládež a šport",
+		"tag": "vzdelavanie_veda_mladez_a_sport"
+	},
+	"Výbor NR SR pre verejnú správu a regionálny rozvoj": {
+		"name": "Verejná správa a regionálny rozvoj",
+		"tag": "verejna_sprava_a_regionalny_rozvoj"
+	},
+	"Výbor NR SR pre európske záležitosti": {
+		"name": "Európske záležitosti",
+		"tag": "europske_zalezitosti"
+	},
+	"Výbor NR SR pre obranu a bezpečnosť": {
+		"name": "Obrana a bezpečnosť",
+		"tag": "obrana_a_bezpecnost"
+	},
+	"Osobitný kontrolný výbor NR SR na kontrolu činnosti Vojenského spravodajstva": {
+		"name": "Kontrola činnosti Vojenského spravodajstva",
+		"tag": "kontrola_cinnosti_vojenského_spravodajstva"
+	},
+	"Výbor NR SR pre hospodárske záležitosti": {
+		"name": "Hospodárske záležitosti",
+		"tag": "hospodarske_zalezitosti"
+	},
+	"Mandátový a imunitný výbor NR SR": {
+		"name": "Mandát a Imunita",
+		"tag": "mandat_a_imunita"
+	},
+	"Osobitný kontrolný výbor NR SR na kontrolu činnosti SIS": {
+		"name": "Kontrola činnosti SIS",
+		"tag": "kontrola_cinnosti_sis"
+	},
+	"Výbor NR SR pre sociálne veci": {
+		"name": "Sociálne veci",
+		"tag": "socialne_veci"
+	},
+	"Ústavnoprávny výbor NR SR": {
+		"name": "Ústavné právo",
+		"tag": "ustavne_pravo"
+	},
+	"Výbor NR SR na preskúmavanie rozhodnutí NBÚ": {
+		"name": "Rozhodnutia NBÚ",
+		"tag": "rozhodnutia_nbu"
+	},
+	"Výbor NR SR pre ľudské práva a národnostné menšiny": {
+		"name": "Ľudské práva a národnostné menšiny",
+		"tag": "ludske_prava_a_narodnostne_mensiny"
+	},
+	"Výbor NR SR pre financie a rozpočet": {
+		"name": "Financie a rozpočet",
+		"tag": "financie_a_rozpocet"
+	},
+	"Osobitný kontrolný výbor NR SR na kontrolu činnosti NBÚ": {
+		"name": "Kontrola činnosti NBÚ",
+		"tag": "kontrola_cinnosti_nbu"
+	},
+	"Výbor NR SR pre nezlučiteľnosť funkcií": {
+		"name": "Nezlúčiteľnosť funkcií",
+		"tag": "nezlucitelnost_funkcii"
+	},
+	"Zahraničný výbor NR SR": {
+		"name": "Zahraničné záležitosti",
+		"tag": "zahranicne_zalezitosti"
+	},
+	"Výbor NR SR pre zdravotníctvo": {
+		"name": "Zdravotníctvo",
+		"tag": "zdravotnictvo"
+	},
+	"Výbor NR SR pre kultúru a médiá": {
+		"name": "Kultúra a médiá",
+		"tag": "kultura_a_media"
+	}
+}

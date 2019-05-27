@@ -1,3 +1,6 @@
+# Runtime outputs.
+data
+
 # Environment variable configuration.
 .env
 
