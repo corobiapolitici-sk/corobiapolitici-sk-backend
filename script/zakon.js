@@ -57,9 +57,63 @@ module.exports = async (db, vyborItems) => {
 				break
 			}
 		}
+
+		if (node.druh === 'nullValue') {
+			node.druh = 'Iný typ'
+		}
 	}
 
-	await fsExtra.writeJson(path.join(__dirname, '..', 'data', 'zakon.json'), nodes)
+	// Druhy zakonov:
+	/*
+		'Novela zákona',
+		'Návrh nového zákona',
+		'Ústavný zákon',
+		'Iný typ',
+		'Správa',
+		'Medzinárodná zmluva',
+		'Zákon vrátený prezidentom',
+		'nullValue',
+		'Informácia',
+		'Návrh zákona o štátnom rozpočte',
+		'Petícia'
+	*/
+	// Vysledky zakonov:
+	/*
+		'',
+		'Výber právneho poradcu',
+		'NZ postúpil do redakcie',
+		'Dokument postúpil na rokovanie NR SR',
+		'Zápis uznesenia NR SR',
+		'NR SR nebude pokračovať v rokovaní o návrhu zákona',
+		'Pripravená informácia k NZ',
+		'Správa postúpila na rokovanie NR SR',
+		'Zákon vyšiel v Zbierke zákonov',
+		'NZ vzal navrhovateľ späť',
+		'Zápis spoločnej správy výborov',
+		'NZ postúpil do II. čítania',
+		'NZ nebol schválený',
+		'Zákon bol vrátený prezidentom',
+		'Zapísané uznesenie výboru'
+	*/
+	// Stavy zakonov:
+	/*
+		'Výber poradcov k NZ',
+		'Evidencia',
+		'Redakcia',
+		'Rokovanie NR SR',
+		'I. čítanie',
+		'Uzavretá úloha',
+		'Stanovisko k NZ',
+		'Rokovanie výboru',
+		'II. čítanie',
+		'Rokovanie gestorského výboru'
+	*/
+
+	await fsExtra.writeJson(path.join(__dirname, '..', 'data', 'zakon.json'), nodes.reverse().filter((node) => {
+		// return true
+		return node.vysledok === 'Zákon vyšiel v Zbierke zákonov'
+		// return node.stav === 'Uzavretá úloha'
+	}))
 
 	return nodes
 }
