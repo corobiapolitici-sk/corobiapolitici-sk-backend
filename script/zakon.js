@@ -7,18 +7,21 @@ const fsExtra = require('fs-extra')
 // Load node modules.
 const path = require('path')
 
+// nodes_zakon
+// edges_vybor_zakon_gestorsky
+// edges_vybor_zakon_navrhnuty
 /*
-nodes_zakon
-edges_vybor_zakon_gestorsky
-edges_vybor_zakon_navrhnuty
 edges_spektrum_zakon_navrhol
 edges_zmena_zakon_navrhnuta
 edges_poslanec_zakon_navrhol
 edges_hlasovanie_zakon_hlasovalo_o
 */
 
-module.exports = async (db) => {
+module.exports = async (db, vyborItems) => {
 	const nodes = await db.collection('nodes_zakon').find().toArray()
+
+	const gestorskyVyborEdges = await db.collection('edges_vybor_zakon_gestorsky').find().toArray()
+	const navrhnutyVyborEdges = await db.collection('edges_vybor_zakon_navrhnuty').find().toArray()
 
 	for (const node of nodes) {
 		node._id = node._id.toString()
@@ -28,6 +31,32 @@ module.exports = async (db) => {
 			node.datumDorucenia = 0
 		}
 		delete node.insertTime
+
+		node.gestorskyVyborName = ''
+		for (const edge of gestorskyVyborEdges) {
+			if (edge.ending_id === node.id) {
+				for (const vybor of vyborItems) {
+					if (edge.beginning_id === vybor.id) {
+						node.gestorskyVyborName = vybor.name
+						break
+					}
+				}
+				break
+			}
+		}
+
+		node.navrhnutyVyboromName = ''
+		for (const edge of navrhnutyVyborEdges) {
+			if (edge.ending_id === node.id) {
+				for (const vybor of vyborItems) {
+					if (edge.beginning_id === vybor.id) {
+						node.navrhnutyVyboromName = vybor.name
+						break
+					}
+				}
+				break
+			}
+		}
 	}
 
 	await fsExtra.writeJson(path.join(__dirname, '..', 'data', 'zakon.json'), nodes)
