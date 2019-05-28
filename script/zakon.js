@@ -26,9 +26,9 @@ module.exports = async (db, vyborItems) => {
 	for (const node of nodes) {
 		node._id = node._id.toString()
 		try {
-			node.datumDorucenia = parseInt(util.dateToTimestamp(node.datumDorucenia), 10)
+			node.datumDorucenia = util.dateToTimestamp(node.datumDorucenia)
 		} catch (exception) {
-			node.datumDorucenia = 0
+			node.datumDorucenia = 'Neznáme'
 		}
 		delete node.insertTime
 

@@ -9,10 +9,10 @@ const padStringLeft = (value, length, padding) => {
 
 const dateToTimestamp = (value) => {
 	return [
-		value.getFullYear().toString(),
-		padStringLeft((value.getMonth() + 1).toString(), 2, '0'),
 		padStringLeft(value.getDate().toString(), 2, '0'),
-	].join('')
+		padStringLeft((value.getMonth() + 1).toString(), 2, '0'),
+		value.getFullYear().toString(),
+	].join('.')
 }
 
 module.exports = {
