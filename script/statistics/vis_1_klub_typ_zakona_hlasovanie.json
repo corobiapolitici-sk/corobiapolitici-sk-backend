@@ -1,0 +1,130 @@
+{
+	"- Nezaradení -":{
+		"opozícia":{
+			"Nehlasoval/a": 138,
+			"Neprítomný/á": 904,
+			"Proti": 335,
+			"Za": 2588,
+			"Zdržal/a sa": 1698
+		},
+		"koalícia":{
+			"Nehlasoval/a": 82,
+			"Neprítomný/á": 818,
+			"Proti": 498,
+			"Za": 2447,
+			"Zdržal/a sa": 954
+		}
+	},
+	"ĽS Naše Slovensko":{
+		"opozícia":{
+			"Nehlasoval/a": 13,
+			"Neprítomný/á": 332,
+			"Proti": 774,
+			"Za": 3431,
+			"Zdržal/a sa": 975
+		},
+		"koalícia":{
+			"Nehlasoval/a": 29,
+			"Neprítomný/á": 417,
+			"Proti": 1342,
+			"Za": 1527,
+			"Zdržal/a sa": 1397
+		}
+	},
+	"MOST - HÍD":{
+		"opozícia":{
+			"Nehlasoval/a": 45,
+			"Neprítomný/á": 528,
+			"Proti": 621,
+			"Za": 93,
+			"Zdržal/a sa": 4243
+		},
+		"koalícia":{
+			"Nehlasoval/a": 29,
+			"Neprítomný/á": 225,
+			"Proti": 8,
+			"Za": 4350,
+			"Zdržal/a sa": 105
+		}
+	},
+	"OĽaNO":{
+		"opozícia":{
+			"Nehlasoval/a": 211,
+			"Neprítomný/á": 1321,
+			"Proti": 48,
+			"Za": 4147,
+			"Zdržal/a sa": 593
+		},
+		"koalícia":{
+			"Nehlasoval/a": 30,
+			"Neprítomný/á": 822,
+			"Proti": 667,
+			"Za": 1967,
+			"Zdržal/a sa": 1906
+		}
+	},
+	"SaS":{
+		"opozícia":{
+			"Nehlasoval/a": 138,
+			"Neprítomný/á": 1001,
+			"Proti": 509,
+			"Za": 4592,
+			"Zdržal/a sa": 1532
+		},
+		"koalícia":{
+			"Nehlasoval/a": 23,
+			"Neprítomný/á": 808,
+			"Proti": 1473,
+			"Za": 2515,
+			"Zdržal/a sa": 1848
+		}
+	},
+	"SME RODINA":{
+		"opozícia":{
+			"Nehlasoval/a": 6,
+			"Neprítomný/á": 396,
+			"Proti": 44,
+			"Za": 2464,
+			"Zdržal/a sa": 250
+		},
+		"koalícia":{
+			"Nehlasoval/a": 59,
+			"Neprítomný/á": 152,
+			"Proti": 414,
+			"Za": 1483,
+			"Zdržal/a sa": 588
+		}
+	},
+	"SMER - SD":{
+		"opozícia":{
+			"Nehlasoval/a": 37,
+			"Neprítomný/á": 1091,
+			"Proti": 6681,
+			"Za": 161,
+			"Zdržal/a sa": 11385
+		},
+		"koalícia":{
+			"Nehlasoval/a": 26,
+			"Neprítomný/á": 648,
+			"Proti": 220,
+			"Za": 15441,
+			"Zdržal/a sa": 177
+		}
+	},
+	"SNS":{
+		"opozícia":{
+			"Nehlasoval/a": 15,
+			"Neprítomný/á": 488,
+			"Proti": 1127,
+			"Za": 72,
+			"Zdržal/a sa": 4223
+		},
+		"koalícia":{
+			"Nehlasoval/a": 20,
+			"Neprítomný/á": 267,
+			"Proti": 66,
+			"Za": 4621,
+			"Zdržal/a sa": 81
+		}
+	}
+}

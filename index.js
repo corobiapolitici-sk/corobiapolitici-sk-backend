@@ -1,13 +1,22 @@
 // Load local modules.
 const vyborScript = require('./script/vybor')
 const zakonScript = require('./script/zakon')
+const statisticsScript = require('./script/statistics')
 
 // Load npm modules.
+const fsExtra = require('fs-extra')
 const { MongoClient } = require('mongodb')
+
+// Load node modules.
+const path = require('path')
 
 const url = 'mongodb://localhost:27017'
 
 ;(async () => {
+	await fsExtra.ensureDir(path.join(__dirname, 'data'))
+
+	await statisticsScript()
+
 	const client = await MongoClient.connect(url, { useNewUrlParser: true })
 
 	try {
