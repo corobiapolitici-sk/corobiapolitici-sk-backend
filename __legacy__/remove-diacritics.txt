@@ -1,0 +1,42 @@
+MATCH (c:Poslanec) WHERE c.narodnost IS NULL SET c.narodnost = c.národnosť REMOVE c.národnosť
+MATCH (c:Poslanec) WHERE c.narodeny IS NULL SET c.narodeny = c.narodený REMOVE c.narodený
+MATCH (c:Klub) WHERE c.pocetPoslancov IS NULL SET c.pocetPoslancov = c.početPoslancov REMOVE c.početPoslancov
+MATCH (c:Rozprava) WHERE c.denSchodze IS NULL SET c.denSchodze = c.deňSchôdze REMOVE c.deňSchôdze
+MATCH (c:Zakon) WHERE c.datumDorucenia IS NULL SET c.datumDorucenia = c.dátumDoručenia REMOVE c.dátumDoručenia
+MATCH (c:Zmena) WHERE c.datumPodania IS NULL SET c.datumPodania = c.dátumPodania REMOVE c.dátumPodania
+MATCH (c:Zmena) WHERE c.nazov IS NULL SET c.nazov = c.názov REMOVE c.názov
+MATCH (c:Hlasovanie) WHERE c.nazovHlasovania IS NULL SET c.nazovHlasovania = c.názovHlasovania REMOVE c.názovHlasovania
+MATCH (c:Hlasovanie) WHERE c.suhrnHlasujucich IS NULL SET c.suhrnHlasujucich = c.súhrnHlasujúcich REMOVE c.súhrnHlasujúcich
+MATCH (c:Hlasovanie) WHERE c.suhrnNehlasovalo IS NULL SET c.suhrnNehlasovalo = c.súhrnNehlasovalo REMOVE c.súhrnNehlasovalo
+MATCH (c:Hlasovanie) WHERE c.suhrnNepritomni IS NULL SET c.suhrnNepritomni = c.súhrnNeprítomní REMOVE c.súhrnNeprítomní
+MATCH (c:Hlasovanie) WHERE c.suhrnProti IS NULL SET c.suhrnProti = c.súhrnProti REMOVE c.súhrnProti
+MATCH (c:Hlasovanie) WHERE c.suhrnPritomni IS NULL SET c.suhrnPritomni = c.súhrnPrítomní REMOVE c.súhrnPrítomní
+MATCH (c:Hlasovanie) WHERE c.suhrnZa IS NULL SET c.suhrnZa = c.súhrnZa REMOVE c.súhrnZa
+MATCH (c:Hlasovanie) WHERE c.suhrnZdrzalo IS NULL SET c.suhrnZdrzalo = c.súhrnZdržalo REMOVE c.súhrnZdržalo
+MATCH (c:Rozprava) WHERE c.typVystupenia IS NULL SET c.typVystupenia = c.typVystúpenia REMOVE c.typVystúpenia
+MATCH (c:Zakon) WHERE c.vysledok IS NULL SET c.vysledok = c.výsledok REMOVE c.výsledok
+MATCH (c:Zakon) WHERE c.nazov IS NULL SET c.nazov = c.názov REMOVE c.názov
+MATCH (c:Hlasovanie) WHERE c.vysledokHlasovania IS NULL SET c.vysledokHlasovania = c.výsledokHlasovania REMOVE c.výsledokHlasovania
+MATCH (c:Rozprava) WHERE c.zaznamRokovania IS NULL SET c.zaznamRokovania = c.záznamRokovania REMOVE c.záznamRokovania
+MATCH (c:Rozprava) WHERE c.zaznamVystupenia IS NULL SET c.zaznamVystupenia = c.záznamVystúpenia REMOVE c.záznamVystúpenia
+MATCH (c:Hlasovanie) WHERE c.casHlasovania IS NULL SET c.casHlasovania = c.časHlasovania REMOVE c.časHlasovania
+MATCH (c:Rozprava) WHERE c.casKoniec IS NULL SET c.casKoniec = c.časKoniec REMOVE c.časKoniec
+MATCH (c:Rozprava) WHERE c.casZaciatok IS NULL SET c.casZaciatok = c.časZačiatok REMOVE c.časZačiatok
+MATCH (c:Rozprava) WHERE c.castDnaSchodze IS NULL SET c.castDnaSchodze = c.časťDňaSchôdze REMOVE c.časťDňaSchôdze
+MATCH (c:Hlasovanie) WHERE c.cisloHlasovania IS NULL SET c.cisloHlasovania = c.čísloHlasovania REMOVE c.čísloHlasovania
+MATCH (c:Zmena) WHERE c.cisloObdobia IS NULL SET c.cisloObdobia = c.čísloObdobia REMOVE c.čísloObdobia
+MATCH (c:Zmena) WHERE c.cisloSchodze IS NULL SET c.cisloSchodze = c.čísloSchôdze REMOVE c.čísloSchôdze
+
+Zatial nespracovane
+MATCH (c:Klub) WHERE c.typClenstva IS NULL SET c.typClenstva = c.typČlenstva REMOVE c.typČlenstva
+MATCH (c:Klub) WHERE c.casNaposledy IS NULL SET c.casNaposledy = c.časNaposledy REMOVE c.časNaposledy
+////MATCH (c:Zakon) WHERE c.navrhovatel IS NULL SET c.navrhovatel = c.navrhovateľ REMOVE c.navrhovateľ
+
+match (n1)-[old:`Člen`]->(n2) create (n1)-[new:Clen]->(n2) delete old
+match (n1)-[old:`BolČlenom`]->(n2) create (n1)-[new:BolClenom]->(n2) delete old
+match (n1)-[old:`Gestorský`]->(n2) create (n1)-[new:Gestorsky]->(n2) delete old
+match (n1)-[old:`Navrhnutá`]->(n2) create (n1)-[new:Navrhnuta]->(n2) delete old
+match (n1)-[old:`Navrhnutý`]->(n2) create (n1)-[new:Navrhnuty]->(n2) delete old
+match (n1)-[old:`Podpísal`]->(n2) create (n1)-[new:Podpisal]->(n2) delete old
+match (n1)-[old:`TýkalaSa`]->(n2) create (n1)-[new:TykalaSa]->(n2) delete old
+match (n1)-[old:`Vystúpil`]->(n2) create (n1)-[new:Vystupil]->(n2) delete old
